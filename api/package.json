@@ -1,21 +1,30 @@
 {
-  "name": "api",
+  "name": "kommunikate-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.heroku.com/kommunikate-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pritam-deb/Kommunikate/issues"
+  },
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "helmet": "^5.0.2",
     "mongoose": "^6.2.1",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
