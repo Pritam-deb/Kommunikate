@@ -8,8 +8,12 @@ dotenv.config();
 const app = express();
 const PORT = 5000;
 
+mongoose.connect(process.env.MONGODB_URL, () =>
+  console.log("Connected to DB!")
+);
+
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello there!!!");
 });
 
 app.listen(PORT, () => {
